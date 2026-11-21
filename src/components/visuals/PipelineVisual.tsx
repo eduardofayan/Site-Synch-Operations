@@ -16,7 +16,7 @@ export function PipelineVisual() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-success opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-success" />
             </span>
-            Ao vivo
+            Disponível
           </span>
         </div>
 
@@ -45,7 +45,7 @@ export function PipelineVisual() {
                   </div>
                   <div className="min-w-0">
                     <p className="font-semibold text-foreground">{step.label}</p>
-                    <p className="truncate text-sm text-muted">{step.sub}</p>
+                    <p className="text-sm break-words text-muted">{step.sub}</p>
                   </div>
                 </motion.div>
 

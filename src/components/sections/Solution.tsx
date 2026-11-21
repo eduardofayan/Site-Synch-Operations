@@ -13,14 +13,14 @@ const glowByAccent = {
 export function Solution() {
   return (
     <section id="solucao" className="relative py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
+      <div className="mx-auto max-w-7xl px-5 2xl:max-w-[96rem] lg:px-8">
         <SectionHeading
           eyebrow="A solução"
           title="Da informação dispersa ao resultado, em um fluxo contínuo."
           description="A Synch Operations capta, trata e integra os dados automaticamente, para que a liderança decida com base em evidências."
         />
 
-        <StaggerGroup className="mt-16 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <StaggerGroup className="mt-16 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
           {solutionSteps.map((step, index) => {
             const Icon = step.icon;
             return (

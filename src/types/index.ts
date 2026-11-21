@@ -3,7 +3,7 @@ import type { LucideIcon } from "lucide-react";
 export type Accent = "primary" | "secondary" | "accent" | "success";
 
 export interface Platform {
-  id: "insight" | "hub" | "bot";
+  id: "insight" | "hub" | "bot" | "cash";
   name: string;
   role: string;
   description: string;

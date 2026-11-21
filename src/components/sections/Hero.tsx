@@ -6,7 +6,7 @@ import { PipelineVisual } from "@/components/visuals/PipelineVisual";
 export function Hero() {
   return (
     <section id="topo" className="relative overflow-hidden pt-32 pb-20 lg:pt-40 lg:pb-32">
-      <div className="mx-auto grid max-w-7xl items-center gap-16 px-5 lg:grid-cols-[1.1fr_1fr] lg:px-8">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-16 px-5 2xl:max-w-[96rem] lg:grid-cols-[1.1fr_1fr] lg:px-8">
         <div>
           <Reveal>
             <a
@@ -14,7 +14,7 @@ export function Hero() {
               className="glass group inline-flex items-center gap-2 rounded-full py-1.5 pr-4 pl-1.5 text-xs font-medium text-muted transition hover:text-foreground"
             >
               <span className="flex items-center gap-1.5 rounded-full bg-gradient-to-r from-primary to-accent px-2.5 py-1 text-[11px] font-semibold text-white">
-                <Sparkles size={12} aria-hidden="true" /> Novo
+                <Sparkles size={12} aria-hidden="true" /> 
               </span>
               Synch Insight com IA conversacional para sua operação
             </a>

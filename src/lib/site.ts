@@ -43,7 +43,7 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.synchoperations.com.br",
   locale: "pt_BR",
   language: "pt-BR",
-  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "contato@synchoperations.com.br",
+  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "contato@synchoperations.com",
   whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "5511952227447",
   whatsappMessage: "Olá! Gostaria de agendar uma demonstração do Synch Insight.",
 };
@@ -61,11 +61,11 @@ export const navLinks = [
 ];
 
 export const heroFlow: { label: string; sub: string; icon: LucideIcon; accent: Accent }[] = [
-  { label: "Sistemas", sub: "ERP, planilhas, APIs e e-mails", icon: Cable, accent: "accent" },
-  { label: "AutoSynch Bot", sub: "Coleta, integração e ETL", icon: Bot, accent: "accent" },
-  { label: "Automation Hub", sub: "Orquestração e governança", icon: Workflow, accent: "secondary" },
+  { label: "Sistemas da sua operação", sub: "ERP, planilhas, APIs e e-mails", icon: Cable, accent: "accent" },
+  { label: "AutoSynch Bot", sub: "Automações de Coletas, integrações e ETL", icon: Bot, accent: "accent" },
+  { label: "Synch Automation Hub", sub: "Orquestração e governança", icon: Workflow, accent: "secondary" },
   { label: "Synch Insight", sub: "Dashboards e IA conversacional", icon: LayoutDashboard, accent: "primary" },
-  { label: "Decisão", sub: "Ação rápida, com dados confiáveis", icon: Target, accent: "success" },
+  { label: "Método Synch CASH", sub: "Tomada de decisão com dados confiáveis", icon: Target, accent: "success" },
 ];
 
 export const problemSources: { label: string; icon: LucideIcon; top: string; left: string; delay: number }[] = [
@@ -113,7 +113,7 @@ export const platforms: Platform[] = [
   {
     id: "insight",
     name: "Synch Insight",
-    role: "Produto principal",
+    role: "Inovação e Business Intelligence",
     description:
       "A plataforma de inteligência operacional. Dashboards, KPIs e relatórios executivos, com um agente de IA que responde perguntas em linguagem natural.",
     highlights: [
@@ -146,13 +146,23 @@ export const platforms: Platform[] = [
     icon: Bot,
     accent: "accent",
   },
+  {
+    id: "cash",
+    name: "Método Synch CASH",
+    role: "Gestão e Decisão",
+    description:
+      "Método Synch CASH aplicado para gestão estratégica e tomada de decisão baseada nos dados do Synch Insight.",
+    highlights: ["Gestão estratégica baseada em dados", "Tomada de decisão informada", "Aplicação do método Synch CASH"],
+    icon: Brain,
+    accent: "accent",
+  },
 ];
 
 export const operationalFlow: { title: string; text: string; platform: string; icon: LucideIcon; accent: Accent }[] = [
   { title: "Executar", text: "O AutoSynch Bot executa e integra os processos em cada sistema da operação.", platform: "AutoSynch Bot", icon: Play, accent: "accent" },
-  { title: "Controlar", text: "O Automation Hub orquestra filas, governa acessos e dispara alertas.", platform: "Automation Hub", icon: SlidersHorizontal, accent: "secondary" },
+  { title: "Controlar", text: "O Synch Automation Hub orquestra filas, governa acessos e dispara alertas.", platform: "Synch Automation Hub", icon: SlidersHorizontal, accent: "secondary" },
   { title: "Analisar", text: "O Synch Insight consolida dados em dashboards e indicadores confiáveis.", platform: "Synch Insight", icon: BarChart3, accent: "primary" },
-  { title: "Decidir", text: "Gestores agem com contexto, rapidez e evidência.", platform: "Sua equipe", icon: CheckCircle2, accent: "success" },
+  { title: "Decidir", text: "Gestores utlizam o método Synch CASH para agir com contexto, rapidez e evidência.", platform: "Método Synch CASH", icon: CheckCircle2, accent: "success" },
 ];
 
 export const insightFeatures: { title: string; icon: LucideIcon }[] = [

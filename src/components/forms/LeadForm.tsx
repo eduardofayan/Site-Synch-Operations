@@ -61,7 +61,7 @@ export function LeadForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="glass glow-border grid gap-4 rounded-3xl p-6 sm:grid-cols-2 sm:p-8" noValidate>
+    <form onSubmit={handleSubmit} className="glass glow-border grid grid-cols-1 gap-4 rounded-3xl p-6 sm:grid-cols-2 sm:p-8" noValidate>
       <div>
         <label htmlFor="lead-name" className="mb-2 block text-xs font-medium text-muted">
           Nome

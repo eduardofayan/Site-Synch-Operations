@@ -7,14 +7,14 @@ import { ctaPoints, whatsappHref } from "@/lib/site";
 export function CTA() {
   return (
     <section id="demo" className="relative py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
+      <div className="mx-auto max-w-7xl px-5 2xl:max-w-[96rem] lg:px-8">
         <div className="glass glow-border relative overflow-hidden rounded-[2.5rem] p-6 sm:p-10 lg:p-16">
           <div
             aria-hidden="true"
             className="absolute -top-32 left-1/2 h-72 w-[40rem] -translate-x-1/2 rounded-full bg-gradient-to-r from-primary/40 via-accent/40 to-secondary/40 blur-3xl"
           />
 
-          <div className="relative grid gap-12 lg:grid-cols-2 lg:gap-16">
+          <div className="relative grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
             <Reveal>
               <p className="font-display text-xs font-semibold tracking-[0.2em] text-secondary uppercase">
                 Próximo passo

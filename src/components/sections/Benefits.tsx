@@ -28,14 +28,14 @@ function CountMetric({ metric }: { metric: Metric }) {
 export function Benefits() {
   return (
     <section id="beneficios" className="relative py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
+      <div className="mx-auto max-w-7xl px-5 2xl:max-w-[96rem] lg:px-8">
         <SectionHeading
           eyebrow="Benefícios"
           title="Resultados que aparecem nos indicadores."
           description="Ganhos medidos em operações que deixaram de depender de tarefas manuais e de consultas em múltiplas fontes."
         />
 
-        <StaggerGroup className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <StaggerGroup className="mt-16 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {benefitMetrics.map((metric) => (
             <StaggerItem key={metric.label}>
               <CountMetric metric={metric} />
@@ -43,7 +43,7 @@ export function Benefits() {
           ))}
         </StaggerGroup>
 
-        <StaggerGroup className="mt-6 grid gap-4 md:grid-cols-2">
+        <StaggerGroup className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
           {benefits.map((benefit) => {
             const Icon = benefit.icon;
             return (

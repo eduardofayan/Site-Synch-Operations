@@ -12,14 +12,14 @@ const accentStyle = {
 export function UseCases() {
   return (
     <section id="casos-de-uso" className="relative py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
+      <div className="mx-auto max-w-7xl px-5 2xl:max-w-[96rem] lg:px-8">
         <SectionHeading
           eyebrow="Casos de uso"
           title="Para quem precisa de controle sobre a operação."
           description="Do planejamento ao financeiro, o ecossistema se adapta às rotinas de cada área."
         />
 
-        <StaggerGroup className="mt-16 grid gap-4 md:grid-cols-2">
+        <StaggerGroup className="mt-16 grid grid-cols-1 gap-4 md:grid-cols-2">
           {useCases.map((useCase) => {
             const Icon = useCase.icon;
             return (

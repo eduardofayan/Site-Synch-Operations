@@ -23,7 +23,7 @@ export function Navbar() {
         scrolled || open ? "border-b border-white/10 bg-background/70 backdrop-blur-xl" : "bg-transparent"
       }`}
     >
-      <nav aria-label="Principal" className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 lg:px-8">
+      <nav aria-label="Principal" className="mx-auto flex h-16 max-w-7xl items-center 2xl:max-w-[96rem] justify-between px-5 lg:px-8">
         <a href="#topo" className="flex items-center" aria-label={`${siteConfig.name} - início`}>
           <span className="flex h-10 items-center rounded-lg bg-white px-2.5 shadow-[0_0_24px_-6px_rgba(242,106,33,0.8)]">
             <Image src="/brand/logo.png" alt="Synch Operations" width={1156} height={408} className="h-7 w-auto" priority />

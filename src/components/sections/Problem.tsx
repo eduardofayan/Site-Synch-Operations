@@ -5,14 +5,14 @@ import { problemPoints, problemSources } from "@/lib/site";
 export function Problem() {
   return (
     <section id="problema" className="relative py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
+      <div className="mx-auto max-w-7xl px-5 2xl:max-w-[96rem] lg:px-8">
         <SectionHeading
           eyebrow="O problema"
           title="Os dados já existem. O desafio é conectá-los."
           description="A operação gera informação em dezenas de lugares. Sem integração, cada área trabalha com um recorte diferente da realidade."
         />
 
-        <div className="mt-16 grid items-center gap-12 lg:grid-cols-[1.2fr_1fr]">
+        <div className="mt-16 grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.2fr_1fr]">
           <Reveal>
             <div className="glass relative aspect-[4/3] w-full overflow-hidden rounded-3xl">
               <svg aria-hidden="true" className="absolute inset-0 h-full w-full" viewBox="0 0 400 300" preserveAspectRatio="none">

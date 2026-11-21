@@ -12,7 +12,7 @@ export function AIAssistant() {
 
   return (
     <section id="ia" className="relative py-24 lg:py-32">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 lg:grid-cols-2 lg:gap-16 lg:px-8">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-5 2xl:max-w-[96rem] lg:grid-cols-2 lg:gap-16 lg:px-8">
         <div>
           <SectionHeading
             align="left"
@@ -75,7 +75,7 @@ export function AIAssistant() {
           </div>
 
           <div className="flex items-center gap-3 border-t border-white/10 px-6 py-4">
-            <span className="flex-1 truncate rounded-full bg-white/5 px-4 py-2.5 text-sm text-muted">
+            <span className="min-w-0 flex-1 truncate rounded-full bg-white/5 px-4 py-2.5 text-sm text-muted">
               Pergunte algo sobre sua operação...
             </span>
             <span aria-hidden="true" className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white">

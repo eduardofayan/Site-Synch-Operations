@@ -5,7 +5,7 @@ import { footerColumns, siteConfig, whatsappHref } from "@/lib/site";
 export function Footer() {
   return (
     <footer className="relative border-t border-white/10 bg-background/60">
-      <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr] lg:px-8">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 2xl:max-w-[96rem] px-5 py-16 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr] lg:px-8">
         <div>
           <a href="#topo" className="inline-flex rounded-lg bg-white px-3 py-2">
             <Image src="/brand/logo.png" alt="Synch Operations" width={1156} height={408} className="h-8 w-auto" />
@@ -54,7 +54,7 @@ export function Footer() {
       </div>
 
       <div className="border-t border-white/5">
-        <div className="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-6 text-xs text-muted sm:flex-row sm:items-center sm:justify-between lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col 2xl:max-w-[96rem] gap-2 px-5 py-6 text-xs text-muted sm:flex-row sm:items-center sm:justify-between lg:px-8">
           <p>© {new Date().getFullYear()} Synch Operations. Todos os direitos reservados.</p>
           <p>Synch Insight · Synch Automation Hub · AutoSynch Bot</p>
         </div>

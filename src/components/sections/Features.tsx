@@ -8,14 +8,14 @@ const insight = platforms.find((platform) => platform.id === "insight");
 export function Features() {
   return (
     <section id="recursos" className="relative py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
+      <div className="mx-auto max-w-7xl px-5 2xl:max-w-[96rem] lg:px-8">
         <SectionHeading
           eyebrow="Recursos"
           title="Tudo o que a liderança precisa, em um só lugar."
           description="O Synch Insight reúne indicadores, análises e relatórios, com consultas em linguagem natural para quem não quer depender de planilhas."
         />
 
-        <div className="mt-16 grid gap-6 lg:grid-cols-5">
+        <div className="mt-16 grid grid-cols-1 gap-6 lg:grid-cols-5">
           <Reveal className="glass glow-border relative overflow-hidden rounded-3xl p-8 lg:col-span-2">
             <div aria-hidden="true" className="absolute -top-24 -right-24 h-64 w-64 rounded-full bg-primary/30 blur-3xl" />
             <p className="font-display text-xs font-semibold tracking-[0.2em] text-secondary uppercase">
@@ -33,7 +33,7 @@ export function Features() {
             </ul>
           </Reveal>
 
-          <StaggerGroup className="grid gap-4 sm:grid-cols-2 lg:col-span-3">
+          <StaggerGroup className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:col-span-3">
             {insightFeatures.map((feature) => {
               const Icon = feature.icon;
               return (

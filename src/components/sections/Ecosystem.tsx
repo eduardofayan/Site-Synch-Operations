@@ -33,7 +33,7 @@ function FeaturedCard({ platform }: { platform: Platform }) {
       className={`group glass relative overflow-hidden rounded-[2rem] p-8 transition-all duration-500 hover:-translate-y-1 sm:p-10 lg:col-span-3 ${accentHover[platform.accent]}`}
     >
       <div className="pointer-events-none absolute -top-24 -right-24 h-72 w-72 rounded-full bg-primary/25 blur-[90px] transition-opacity duration-500 group-hover:opacity-100 opacity-70" />
-      <div className="relative grid gap-8 lg:grid-cols-[1.1fr_1fr] lg:items-center">
+      <div className="relative grid grid-cols-1 gap-8 lg:grid-cols-[1.1fr_1fr] lg:items-center">
         <div>
           <span className="inline-flex items-center rounded-full bg-gradient-to-r from-primary to-accent px-3 py-1 text-xs font-semibold text-white">
             {platform.role}
@@ -52,7 +52,7 @@ function FeaturedCard({ platform }: { platform: Platform }) {
             </Button>
           </div>
         </div>
-        <ul className="grid gap-3 sm:grid-cols-2">
+        <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
           {platform.highlights.map((item) => (
             <li key={item} className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/[0.03] p-4">
               <Check size={18} className="mt-0.5 shrink-0 text-success" aria-hidden="true" />
@@ -94,14 +94,16 @@ export function Ecosystem() {
 
   return (
     <section id="ecossistema" className="relative py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
+      <div className="mx-auto max-w-7xl px-5 2xl:max-w-[96rem] lg:px-8">
         <SectionHeading
           eyebrow="O ecossistema"
-          title="Um produto para decidir. Dois motores para sustentar a operação."
-          description="O Synch Insight é a plataforma que o seu time usa no dia a dia. O Automation Hub e o AutoSynch Bot garantem que os dados cheguem completos, atualizados e confiáveis."
+          title="Um produto para decidir.
+          Dois motores para sustentar a operação. 
+          Um método para agir com confiança."
+          description="O Synch Insight é a plataforma que o seu time usa no dia a dia. O Synch Automation Hub e o AutoSynch Bot garantem que os dados cheguem completos, atualizados e confiáveis e o Método Synch CASH permite agir com confiança."
         />
 
-        <StaggerGroup className="mt-16 grid gap-6 lg:grid-cols-3">
+        <StaggerGroup className="mt-16 grid grid-cols-1 gap-6 lg:grid-cols-3">
           <StaggerItem className="lg:col-span-3">
             <FeaturedCard platform={insight} />
           </StaggerItem>

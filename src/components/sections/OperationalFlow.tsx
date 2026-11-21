@@ -12,14 +12,14 @@ const accentText = {
 export function OperationalFlow() {
   return (
     <section id="fluxo" className="relative py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
+      <div className="mx-auto max-w-7xl px-5 2xl:max-w-[96rem] lg:px-8">
         <SectionHeading
           eyebrow="Fluxo operacional"
           title="Executar, controlar, analisar e decidir."
           description="Cada plataforma cumpre uma etapa do ciclo. Juntas, elas fecham o caminho entre o dado bruto e a decisão."
         />
 
-        <StaggerGroup className="relative mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <StaggerGroup className="relative mt-16 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           <div
             aria-hidden="true"
             className="absolute top-8 right-[12%] left-[12%] hidden h-px bg-gradient-to-r from-accent via-secondary to-success opacity-40 lg:block"
